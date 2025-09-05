@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f9fafc" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Seaview Immigration | Under Maintenance</title>
+  <link rel="icon" type="image/png" href="favicon1.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f9fafc;
+      --bg-2: #eef2f9;
+      --text: #0b1220;
+      --muted: #6b7280;
+      --accent: #c30e16;  /* Red */
+      --accent-2: #155da9; /* Blue */
+      --card: #ffffff;
+      --border: rgba(0,0,0,0.08);
+      --shadow: 0 8px 24px rgba(0,0,0,0.12);
+      --radius: 20px;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 600px at 10% -10%, rgba(21,93,169,0.15), transparent 60%),
+        radial-gradient(900px 600px at 110% 10%, rgba(195,14,22,0.15), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden; /* prevent scroll */
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px 24px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 800;
+      color: var(--accent-2);
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px dashed var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: 600;
+      background: rgba(0,0,0,0.02);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(195,14,22,0.6);
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 20px;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform .15s ease, border-color .2s ease;
+      background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(0,0,0,0.2);
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, rgba(21,93,169,0.2), rgba(195,14,22,0.2));
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo">
+      <img src="favicon1.png" alt="Seaview Immigration Logo" />
+    </div>
+    <h1>Seaview Immigration</h1>
+    <div class="sub">Our website is currently undergoing maintenance. We’ll be back shortly!</div>
+
+    <span class="pill"><span class="dot"></span> Status: Temporarily offline</span>
+
+    <p>Thank you for your patience. Our team is working hard behind the scenes to bring everything back online as quickly as possible.</p>
+
+    <div class="btns">
+      <a class="btn primary" href="tel:+17788341751">📞 Call us: +1 (778) 834-1751</a>
+      <a class="btn" href="mailto:Info@seaviewimmigration.com">✉️ Email: Info@seaviewimmigration.com</a>
+      <a class="btn" href="https://wa.me/17788341751" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+
+    <div class="small">Business hours: Mon–Sat, 10:00–18:00 IST</div>
+
+    <footer>
+      © <span id="y"></span> Seaview Immigration • All rights reserved
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
